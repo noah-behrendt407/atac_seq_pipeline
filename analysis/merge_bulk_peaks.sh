@@ -25,3 +25,11 @@ cat ${PEAKS}/*.bed | sort -k1,1 -k2,2n | bedtools merge -i stdin > ${OUTPUT_DIR}
 
 
 echo "Merge complete. Files saved to $OUTPUT_DIR"
+
+
+#Confirm the merger worked 
+# Count total peaks across all raw files in the folder
+#cat /scratch/njb42996/atac/analysis/selected_peaks_maize/*.bed | wc -l
+
+# Count peaks in your new collapsed file
+#wc -l /scratch/njb42996/atac/analysis/merged_bulk_peaks/B104_collapsed_peaks.bed
