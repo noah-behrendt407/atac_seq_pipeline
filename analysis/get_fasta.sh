@@ -29,5 +29,4 @@ for file in "${peaks_dir}"/Consensus_*.bed; do
 done
 
 
-#extract just genes of interest
-#grep -Fwf "/path/to/genes_of_interest.txt" "path/to/fasta" > "/pathto/new/fasta/subfile"
+
