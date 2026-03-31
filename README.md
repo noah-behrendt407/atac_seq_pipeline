@@ -36,3 +36,7 @@ wget -O /scratch/njb42996/{WORKING_DIR}/adapters/TruSeq3-PE.fa https://raw.githu
 - note the array
 - generate bigwig files to view Tn5 integration 
 - takes 1bp clean tn5 and makes it 50bp window 
+
+10. Refined Frip
+- generate frips for all the different stringencies 
+- best for bulk and seeing which stringency is best along with visualization
