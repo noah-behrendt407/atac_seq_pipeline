@@ -17,9 +17,12 @@ set -o pipefail
 # Load necessary module
 ml BEDTools/2.31.1-GCC-13.3.0
 
-PROCESSED_DIR=""
 REFINED_DIR=""
-OUTPUT_FILE="refinement_master_stats.tsv"
+PROCESSED_DIR=""
+OUTPUT_DIR=""
+OUTPUT_FILE="${OUTPUT_DIR}/ refinement_master_stats.tsv"
+
+mkdir -p "$OUTPUT_DIR"
 
 # Create header - Added Peak_Count here
 echo -e "Sample\tStringency\tPeak_Count\tTotal_Reads\tReads_In_Peaks\tFRiP" > "$OUTPUT_FILE"
