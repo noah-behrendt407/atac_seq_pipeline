@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -J refine_peaks_maize
+#SBATCH -J refine_frip
 #SBATCH -p batch
 #SBATCH -n 1
 #SBATCH -c 8
