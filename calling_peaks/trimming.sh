@@ -37,7 +37,7 @@ R2_PATTERN="_R2"
 
 # Trimmomatic Parameters (adjust as needed)
 THREADS=8
-ADAPTER_FILE="${ADAPTER_DIR}/TruSeq3-PE.fa"
+ADAPTER_FILE="${ADAPTER_DIR}/NexteraPE-PE.fa"
 ILLUMINACLIP_PARAMS="2:30:10"  #Controls how strict adapter removal is (2 mismatches allowed, palindrome threshold 30, simple threshold 10)
 SLIDINGWINDOW_PARAMS="4:15" # Quality filtering in 4-base windows, drops if average quality drops below 15
 LEADING=3 #Removes poor quality bases (< 3) from read ends
@@ -64,7 +64,8 @@ mkdir -p "${OUTPUT_DIR}"
 if [ ! -f "${ADAPTER_FILE}" ]; then
     echo "Downloading TruSeq3-PE adapters..."
     mkdir -p "${ADAPTER_DIR}"
-    wget -O "${ADAPTER_FILE}" https://raw.githubusercontent.com/timflutre/trimmomatic/master/adapters/TruSeq3-PE.fa
+    wget -O "${ADAPTER_FILE}" wget -O https://github.com/usadellab/Trimmomatic/blob/main/adapters/NexteraPE-PE.fa
+
     echo "Adapters downloaded successfully"
 fi
 
