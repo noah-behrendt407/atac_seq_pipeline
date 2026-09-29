@@ -4,7 +4,8 @@
 
 1. Adapter Download 
 mkdir -p /scratch/njb42996/{WORKING_DIR}/adapters
-(https://github.com/usadellab/Trimmomatic/blob/main/adapters/NexteraPE-PE.fa)
+wget -O /scratch/njb42996/{WORKING_DIR}/adapters/NexteraPE-PE.fa https://github.com/usadellab/Trimmomatic/blob/main/adapters/NexteraPE-PE.fa
+#move the downloaded adapters to an adapters directory in your working directory 
 
 2. Trimming adapdters and low quality base calls 
 - use trimming.sh
